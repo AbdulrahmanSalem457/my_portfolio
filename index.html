@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Abdulrahman Salem — Full Stack Django Developer</title>
+<meta name="description" content="Full Stack Web Developer specialising in Django, REST APIs and modern front-end interfaces. I design and build fast, scalable web products end to end." />
+<meta name="author" content="Abdulrahman Salem" />
+<meta name="theme-color" content="#f7f7f5" />
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Abdulrahman Salem — Full Stack Django Developer" />
+<meta property="og:description" content="I build fast, scalable web products end to end with Django and modern front-end." />
+<meta property="og:image" content="assets/img/og-cover.jpg" />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9889;</text></svg>" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════ PRELOADER ══════════════════════ -->
+<div class="preloader" id="preloader">
+  <div class="preloader__inner">
+    <div class="preloader__name">
+      <span>A</span><span>b</span><span>d</span><span>u</span><span>l</span><span>r</span><span>a</span><span>h</span><span>m</span><span>a</span><span>n</span>
+    </div>
+    <div class="preloader__bar"><i id="preloaderFill"></i></div>
+    <div class="preloader__count"><span id="preloaderCount">0</span>%</div>
+  </div>
+  <div class="preloader__curtain"></div>
+</div>
+
+<!-- ══════════════════════ UI CHROME ══════════════════════ -->
+<div class="grain" aria-hidden="true"></div>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<!-- ══════════════════════ NAVBAR ══════════════════════ -->
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="#home" class="brand" data-cursor="link">
+      <span class="brand__mark">AS</span>
+      <span class="brand__text">Abdulrahman<em>.dev</em></span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#home"     class="nav__link is-active">Home</a>
+      <a href="#about"    class="nav__link">About</a>
+      <a href="#skills"   class="nav__link">Skills</a>
+      <a href="#services" class="nav__link">Services</a>
+      <a href="#work"     class="nav__link">Work</a>
+      <a href="#journey"  class="nav__link">Journey</a>
+      <a href="#contact"  class="nav__link">Contact</a>
+      <span class="nav__pill" id="navPill" aria-hidden="true"></span>
+    </nav>
+
+    <div class="nav__cta">
+      <!-- ✏️ EDIT: put your real WhatsApp number (country code, no + or spaces) -->
+      <a href="https://wa.me/201000000000" target="_blank" rel="noopener" class="btn btn--sm btn--primary magnetic" data-cursor="link">
+        <span>Let's talk</span>
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ══════════════════════ HERO ══════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="blob blob--1" data-parallax="0.06"></div>
+    <div class="blob blob--2" data-parallax="-0.04"></div>
+    <div class="blob blob--3" data-parallax="0.03"></div>
+    <div class="hero__grid"></div>
+  </div>
+
+  <div class="container hero__inner">
+    <div class="hero__copy">
+      <div class="badge reveal" data-reveal-delay="0">
+        <span class="badge__dot"></span>
+        Available for freelance &amp; full-time
+      </div>
+
+      <h1 class="hero__title">
+        <span class="line"><span class="word">Full</span> <span class="word">Stack</span></span>
+        <span class="line"><span class="word grad">Django</span> <span class="word">Developer</span></span>
+      </h1>
+
+      <p class="hero__role reveal" data-reveal-delay="120">
+        I build <span class="scramble" id="scramble" data-words="scalable backends|clean REST APIs|fast dashboards|real products">scalable backends</span>
+      </p>
+
+      <p class="hero__lead reveal" data-reveal-delay="200">
+        I'm a full stack web developer who turns ideas into production-ready web apps —
+        Django &amp; Django REST Framework on the back, modern JavaScript and pixel-tight CSS on the front.
+        Databases, auth, payments, deployment: I handle the whole stack.
+      </p>
+
+      <div class="hero__actions reveal" data-reveal-delay="280">
+        <a href="#work" class="btn btn--primary magnetic" data-cursor="link">
+          <span>View my work</span>
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+        </a>
+        <a href="#contact" class="btn btn--ghost magnetic" data-cursor="link">
+          <span>Hire me</span>
+        </a>
+      </div>
+
+      <div class="hero__socials reveal" data-reveal-delay="340">
+        <span class="hero__socials-label">Find me</span>
+        <span class="hero__socials-line"></span>
+        <!-- ✏️ EDIT: your real links -->
+        <a href="https://wa.me/201000000000" target="_blank" rel="noopener" aria-label="WhatsApp" data-cursor="link" class="social-ico">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.22.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.12.17 1.75 2.67 4.24 3.75.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener" aria-label="LinkedIn" data-cursor="link" class="social-ico">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.75-1.95C21.6 8.75 22 11 22 14v7h-4v-6.2c0-1.48-.03-3.38-2.06-3.38-2.06 0-2.38 1.6-2.38 3.27V21h-4V9Z"/></svg>
+        </a>
+        <a href="mailto:abodysalem383@gmail.com" aria-label="Email" data-cursor="link" class="social-ico">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg>
+        </a>
+        <a href="https://github.com/your-username" target="_blank" rel="noopener" aria-label="GitHub" data-cursor="link" class="social-ico">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49l-.01-1.7c-2.78.62-3.37-1.37-3.37-1.37-.46-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9l-.01 2.82c0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Animated code window -->
+    <div class="hero__visual reveal" data-reveal-delay="220">
+      <div class="code-card" data-tilt>
+        <div class="code-card__bar">
+          <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+          <span class="code-card__file">models.py</span>
+        </div>
+        <pre class="code-card__body"><code id="typedCode"></code><span class="caret"></span></pre>
+      </div>
+
+      <div class="float-chip float-chip--1" data-parallax="0.05">
+        <b>7+</b><span>Years coding</span>
+      </div>
+      <div class="float-chip float-chip--2" data-parallax="-0.06">
+        <b>40+</b><span>Projects shipped</span>
+      </div>
+      <div class="orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-hint" data-cursor="link" aria-label="Scroll down">
+    <span class="scroll-hint__mouse"><i></i></span>
+    <span class="scroll-hint__txt">Scroll</span>
+  </a>
+</section>
+
+<!-- ══════════════════════ MARQUEE ══════════════════════ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <div class="marquee__group">
+      <span>Django</span><i>✦</i><span>Django REST</span><i>✦</i><span>Python</span><i>✦</i><span>PostgreSQL</span><i>✦</i>
+      <span>JavaScript</span><i>✦</i><span>React</span><i>✦</i><span>Tailwind</span><i>✦</i><span>Docker</span><i>✦</i>
+      <span>Celery</span><i>✦</i><span>Redis</span><i>✦</i><span>AWS</span><i>✦</i><span>Git</span><i>✦</i>
+    </div>
+    <div class="marquee__group">
+      <span>Django</span><i>✦</i><span>Django REST</span><i>✦</i><span>Python</span><i>✦</i><span>PostgreSQL</span><i>✦</i>
+      <span>JavaScript</span><i>✦</i><span>React</span><i>✦</i><span>Tailwind</span><i>✦</i><span>Docker</span><i>✦</i>
+      <span>Celery</span><i>✦</i><span>Redis</span><i>✦</i><span>AWS</span><i>✦</i><span>Git</span><i>✦</i>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════ ABOUT ══════════════════════ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow"><i></i>About me</span>
+      <h2 class="section__title">The developer behind <span class="grad">the code</span></h2>
+    </div>
+
+    <div class="about">
+      <div class="about__media reveal" data-reveal-delay="60">
+        <div class="about__photo" data-tilt>
+          <!-- ✏️ EDIT: drop your photo at assets/img/profile.jpg -->
+          <img src="assets/img/profile.jpg" alt="Portrait of Abdulrahman Salem"
+               onerror="this.style.display='none';this.parentElement.classList.add('is-empty')" />
+          <div class="about__photo-fallback">
+            <span>AS</span>
+            <small>assets/img/profile.jpg</small>
+          </div>
+          <div class="about__photo-glow"></div>
+        </div>
+        <div class="about__badge">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"/></svg>
+          Open to work
+        </div>
+      </div>
+
+      <div class="about__body">
+        <p class="about__intro reveal" data-reveal-delay="80">
+          Hi — I'm <b>Abdulrahman</b>, a full stack web developer based in Egypt.
+          I've spent the last few years building web applications where the backend actually
+          holds up under real traffic and the frontend feels good to use.
+        </p>
+        <p class="reveal" data-reveal-delay="140">
+          My core is <b>Django</b>. I architect data models, write clean REST APIs with DRF, wire up
+          authentication and permissions, background jobs with Celery, caching with Redis, and ship it
+          all with Docker. On the front, I build the interface myself — no handing off half a product.
+        </p>
+        <p class="reveal" data-reveal-delay="200">
+          I care about the boring things that make software last: readable code, real tests, sensible
+          migrations, and documentation the next developer won't curse me for. If you need someone who
+          can own a product from the database schema to the last hover state — that's the job I like most.
+        </p>
+
+        <div class="stats">
+          <div class="stat reveal" data-reveal-delay="240">
+            <b class="counter" data-count="40" data-suffix="+">0</b>
+            <span>Projects delivered</span>
+          </div>
+          <div class="stat reveal" data-reveal-delay="300">
+            <b class="counter" data-count="7" data-suffix="+">0</b>
+            <span>Years experience</span>
+          </div>
+          <div class="stat reveal" data-reveal-delay="360">
+            <b class="counter" data-count="30" data-suffix="+">0</b>
+            <span>Happy clients</span>
+          </div>
+          <div class="stat reveal" data-reveal-delay="420">
+            <b class="counter" data-count="99" data-suffix="%">0</b>
+            <span>On-time delivery</span>
+          </div>
+        </div>
+
+        <div class="about__meta reveal" data-reveal-delay="460">
+          <div><span>Location</span><b>Egypt · Remote worldwide</b></div>
+          <div><span>Languages</span><b>Arabic (native) · English</b></div>
+          <div><span>Focus</span><b>Django · DRF · JavaScript</b></div>
+          <div><span>Response</span><b>Usually within a few hours</b></div>
+        </div>
+
+        <!-- ✏️ EDIT: put your CV at assets/cv.pdf -->
+        <a href="assets/cv.pdf" download class="btn btn--dark magnetic reveal" data-reveal-delay="500" data-cursor="link">
+          <span>Download CV</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ SKILLS ══════════════════════ -->
+<section class="section section--tint" id="skills">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow"><i></i>Skills</span>
+      <h2 class="section__title">My technical <span class="grad">toolbox</span></h2>
+      <p class="section__sub">The stack I reach for every day — and the level I'm actually at with each.</p>
+    </div>
+
+    <div class="skills">
+      <article class="skill-card reveal" data-reveal-delay="0" data-tilt>
+        <div class="skill-card__ico ico--indigo">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.66 3.58 3 8 3s8-1.34 8-3v-13"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg>
+        </div>
+        <h3>Backend</h3>
+        <p>Where I'm strongest — data models, APIs, and everything that keeps them fast.</p>
+        <ul class="bars">
+          <li><span>Django</span><i class="bar" data-level="95"><b></b></i></li>
+          <li><span>Django REST Framework</span><i class="bar" data-level="92"><b></b></i></li>
+          <li><span>Python</span><i class="bar" data-level="94"><b></b></i></li>
+          <li><span>PostgreSQL</span><i class="bar" data-level="86"><b></b></i></li>
+          <li><span>Celery &amp; Redis</span><i class="bar" data-level="80"><b></b></i></li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal" data-reveal-delay="90" data-tilt>
+        <div class="skill-card__ico ico--sky">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9 17-5-5 5-5M15 7l5 5-5 5"/></svg>
+        </div>
+        <h3>Frontend</h3>
+        <p>Interfaces built by hand — responsive, accessible, and animated with intent.</p>
+        <ul class="bars">
+          <li><span>JavaScript (ES6+)</span><i class="bar" data-level="90"><b></b></i></li>
+          <li><span>HTML5 &amp; CSS3</span><i class="bar" data-level="95"><b></b></i></li>
+          <li><span>React</span><i class="bar" data-level="78"><b></b></i></li>
+          <li><span>Tailwind / Bootstrap</span><i class="bar" data-level="88"><b></b></i></li>
+          <li><span>UI animation</span><i class="bar" data-level="85"><b></b></i></li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal" data-reveal-delay="180" data-tilt>
+        <div class="skill-card__ico ico--green">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Z"/><path d="m3 7 9 5 9-5M12 12v10"/></svg>
+        </div>
+        <h3>DevOps &amp; Tools</h3>
+        <p>Shipping, monitoring, and keeping deploys boring in the best way.</p>
+        <ul class="bars">
+          <li><span>Docker</span><i class="bar" data-level="84"><b></b></i></li>
+          <li><span>Git &amp; GitHub</span><i class="bar" data-level="93"><b></b></i></li>
+          <li><span>Linux &amp; Nginx</span><i class="bar" data-level="80"><b></b></i></li>
+          <li><span>CI/CD</span><i class="bar" data-level="76"><b></b></i></li>
+          <li><span>AWS / VPS deploy</span><i class="bar" data-level="78"><b></b></i></li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="chips reveal" data-reveal-delay="120">
+      <span>REST APIs</span><span>JWT Auth</span><span>Stripe / PayPal</span><span>WebSockets</span>
+      <span>Django Channels</span><span>Pytest</span><span>GraphQL</span><span>Sentry</span>
+      <span>Figma → Code</span><span>SEO basics</span><span>Performance tuning</span><span>Agile</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ SERVICES ══════════════════════ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow"><i></i>Services</span>
+      <h2 class="section__title">What I can <span class="grad">build for you</span></h2>
+      <p class="section__sub">Pick a piece or hand me the whole product — I'm comfortable either way.</p>
+    </div>
+
+    <div class="services">
+      <article class="service reveal" data-reveal-delay="0">
+        <span class="service__num">01</span>
+        <div class="service__ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="19" height="14" rx="2.5"/><path d="M8 21h8M12 17.5V21"/></svg></div>
+        <h3>Full Stack Web Apps</h3>
+        <p>End-to-end products built on Django — data modelling, business logic, admin dashboards, and the interface your users actually touch.</p>
+        <ul class="service__list"><li>Custom Django apps</li><li>Admin &amp; dashboards</li><li>Role-based access</li></ul>
+      </article>
+
+      <article class="service reveal" data-reveal-delay="90">
+        <span class="service__num">02</span>
+        <div class="service__ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/><circle cx="19" cy="17" r="2.2"/></svg></div>
+        <h3>REST API Development</h3>
+        <p>Clean, documented, versioned APIs with DRF — the kind mobile teams and frontend devs don't have to fight with.</p>
+        <ul class="service__list"><li>DRF + JWT auth</li><li>Swagger / OpenAPI docs</li><li>Rate limiting &amp; caching</li></ul>
+      </article>
+
+      <article class="service reveal" data-reveal-delay="180">
+        <span class="service__num">03</span>
+        <div class="service__ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18v12H3z"/><path d="M3 10h18M7 14h4"/></svg></div>
+        <h3>E-commerce Platforms</h3>
+        <p>Carts, checkout, payment gateways, order pipelines and inventory — built to handle real money without drama.</p>
+        <ul class="service__list"><li>Stripe / PayPal / Paymob</li><li>Order &amp; stock management</li><li>Invoices &amp; reporting</li></ul>
+      </article>
+
+      <article class="service reveal" data-reveal-delay="270">
+        <span class="service__num">04</span>
+        <div class="service__ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <h3>Landing Pages &amp; UI</h3>
+        <p>Fast, responsive, animated front-ends in plain HTML/CSS/JS or React — coded from a Figma file or from scratch.</p>
+        <ul class="service__list"><li>Pixel-accurate builds</li><li>Scroll animations</li><li>90+ Lighthouse scores</li></ul>
+      </article>
+
+      <article class="service reveal" data-reveal-delay="360">
+        <span class="service__num">05</span>
+        <div class="service__ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.2-8.56"/><path d="m9 12 2.5 2.5L21 5"/></svg></div>
+        <h3>Deployment &amp; Maintenance</h3>
+        <p>Getting it live and keeping it there — Docker, Nginx, CI/CD, backups, monitoring and the 2am fixes.</p>
+        <ul class="service__list"><li>VPS / AWS setup</li><li>CI/CD pipelines</li><li>Monitoring &amp; backups</li></ul>
+      </article>
+
+      <article class="service reveal" data-reveal-delay="450">
+        <span class="service__num">06</span>
+        <div class="service__ico"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-6M12 8V4"/><circle cx="12" cy="11" r="3"/><path d="M5 20V9M19 20v-5"/></svg></div>
+        <h3>Rescue &amp; Refactor</h3>
+        <p>Inherited a messy codebase or a project someone abandoned? I audit it, stabilise it, and get it moving again.</p>
+        <ul class="service__list"><li>Code audits</li><li>Performance fixes</li><li>Legacy migrations</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ WORK / PROJECTS ══════════════════════ -->
+<section class="section section--tint" id="work">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow"><i></i>Selected work</span>
+      <h2 class="section__title">Projects &amp; <span class="grad">demo videos</span></h2>
+      <p class="section__sub">Every card opens a screen recording of the real thing running. No mockups.</p>
+    </div>
+
+    <div class="filters reveal" id="filters" data-reveal-delay="80">
+      <button class="filter is-active" data-filter="all">All</button>
+      <button class="filter" data-filter="django">Django</button>
+      <button class="filter" data-filter="ecommerce">E-commerce</button>
+      <button class="filter" data-filter="api">API</button>
+      <button class="filter" data-filter="frontend">Frontend</button>
+    </div>
+
+    <!-- Cards are generated from the PROJECTS array in js/main.js -->
+    <div class="projects" id="projects"></div>
+
+    <div class="work__more reveal">
+      <p>Want to see something specific, or the code behind it?</p>
+      <a href="#contact" class="btn btn--dark magnetic" data-cursor="link"><span>Ask me for a walkthrough</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ JOURNEY ══════════════════════ -->
+<section class="section" id="journey">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow"><i></i>Journey</span>
+      <h2 class="section__title">Experience &amp; <span class="grad">milestones</span></h2>
+    </div>
+
+    <div class="timeline" id="timeline">
+      <span class="timeline__line"><i id="timelineFill"></i></span>
+
+      <article class="tl-item reveal">
+        <span class="tl-dot"></span>
+        <div class="tl-card" data-tilt>
+          <span class="tl-year">2023 — Present</span>
+          <h3>Senior Full Stack Developer <em>· Freelance</em></h3>
+          <p>Leading end-to-end delivery for clients across e-commerce, SaaS and internal tooling. Architecting Django backends, designing REST APIs, and building the front-ends on top of them.</p>
+          <div class="tl-tags"><span>Django</span><span>DRF</span><span>PostgreSQL</span><span>Docker</span></div>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <span class="tl-dot"></span>
+        <div class="tl-card" data-tilt>
+          <span class="tl-year">2021 — 2023</span>
+          <h3>Backend Developer <em>· Product Team</em></h3>
+          <p>Owned core API services for a multi-tenant platform. Cut average response times by more than half through query optimisation, caching, and moving heavy work to Celery workers.</p>
+          <div class="tl-tags"><span>Python</span><span>Celery</span><span>Redis</span><span>CI/CD</span></div>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <span class="tl-dot"></span>
+        <div class="tl-card" data-tilt>
+          <span class="tl-year">2019 — 2021</span>
+          <h3>Web Developer</h3>
+          <p>Built and shipped marketing sites, dashboards and internal tools. This is where the front-end habits came from — responsive layouts, animation, and caring about how a page actually feels.</p>
+          <div class="tl-tags"><span>JavaScript</span><span>CSS</span><span>Bootstrap</span></div>
+        </div>
+      </article>
+
+      <article class="tl-item reveal">
+        <span class="tl-dot"></span>
+        <div class="tl-card" data-tilt>
+          <span class="tl-year">2018</span>
+          <h3>Started with Python</h3>
+          <p>First lines of Python, first Django tutorial, first deployed site that nobody visited. Been building ever since.</p>
+          <div class="tl-tags"><span>Python</span><span>Django</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ CONTACT ══════════════════════ -->
+<section class="section section--tint" id="contact">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow"><i></i>Contact</span>
+      <h2 class="section__title">Let's build <span class="grad">something good</span></h2>
+      <p class="section__sub">Tell me what you're working on. I usually reply within a few hours.</p>
+    </div>
+
+    <div class="contact">
+      <div class="contact__cards">
+        <!-- ✏️ EDIT: WhatsApp number -->
+        <a href="https://wa.me/201000000000" target="_blank" rel="noopener" class="c-card reveal" data-cursor="link">
+          <span class="c-card__ico ico--green">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.22.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.12.17 1.75 2.67 4.24 3.75.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+          </span>
+          <div><span>WhatsApp</span><b id="waLabel">+20 100 000 0000</b></div>
+          <svg class="c-card__arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+
+        <!-- ✏️ EDIT: LinkedIn profile URL -->
+        <a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener" class="c-card reveal" data-reveal-delay="70" data-cursor="link">
+          <span class="c-card__ico ico--sky">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.75-1.95C21.6 8.75 22 11 22 14v7h-4v-6.2c0-1.48-.03-3.38-2.06-3.38-2.06 0-2.38 1.6-2.38 3.27V21h-4V9Z"/></svg>
+          </span>
+          <div><span>LinkedIn</span><b>/in/your-username</b></div>
+          <svg class="c-card__arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+
+        <a href="mailto:abodysalem383@gmail.com" class="c-card reveal" data-reveal-delay="140" data-cursor="link">
+          <span class="c-card__ico ico--indigo">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg>
+          </span>
+          <div><span>Email</span><b>abodysalem383@gmail.com</b></div>
+          <svg class="c-card__arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+
+        <div class="c-note reveal" data-reveal-delay="210">
+          <b>Prefer a quick call?</b>
+          <p>Send me a WhatsApp message with a rough idea of the project and I'll get back to you with questions, a timeline, and a price.</p>
+        </div>
+      </div>
+
+      <form class="contact__form reveal" id="contactForm" data-reveal-delay="100" novalidate>
+        <div class="field">
+          <input type="text" id="cfName" name="name" required placeholder=" " autocomplete="name" />
+          <label for="cfName">Your name</label>
+        </div>
+        <div class="field">
+          <input type="email" id="cfEmail" name="email" required placeholder=" " autocomplete="email" />
+          <label for="cfEmail">Your email</label>
+        </div>
+        <div class="field">
+          <input type="text" id="cfSubject" name="subject" placeholder=" " />
+          <label for="cfSubject">Subject</label>
+        </div>
+        <div class="field">
+          <textarea id="cfMessage" name="message" rows="5" required placeholder=" "></textarea>
+          <label for="cfMessage">Tell me about the project…</label>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block magnetic" data-cursor="link">
+          <span>Send message</span>
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 16-8-6 16-2.5-6.5L4 12Z"/></svg>
+        </button>
+        <p class="form-note" id="formNote">This opens your email app with the message ready to send.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════════════════ FOOTER ══════════════════════ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <span class="brand__mark">AS</span>
+      <div>
+        <b>Abdulrahman Salem</b>
+        <span>Full Stack Django Developer</span>
+      </div>
+    </div>
+
+    <nav class="footer__nav">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#services">Services</a>
+      <a href="#work">Work</a><a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer__socials">
+      <a href="https://wa.me/201000000000" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-ico"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm4.52 12.14c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.22.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.12.17 1.75 2.67 4.24 3.75.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg></a>
+      <a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-ico"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.75-1.95C21.6 8.75 22 11 22 14v7h-4v-6.2c0-1.48-.03-3.38-2.06-3.38-2.06 0-2.38 1.6-2.38 3.27V21h-4V9Z"/></svg></a>
+      <a href="mailto:abodysalem383@gmail.com" aria-label="Email" class="social-ico"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg></a>
+      <a href="https://github.com/your-username" target="_blank" rel="noopener" aria-label="GitHub" class="social-ico"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49l-.01-1.7c-2.78.62-3.37-1.37-3.37-1.37-.46-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9l-.01 2.82c0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg></a>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© <span id="year">2026</span> Abdulrahman Salem. Built from scratch with HTML, CSS &amp; JavaScript.</span>
+    <span class="footer__made">Made with <i>♥</i> and a lot of coffee</span>
+  </div>
+</footer>
+
+<!-- ══════════════════════ VIDEO MODAL ══════════════════════ -->
+<div class="modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Project demo video" hidden>
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__panel">
+    <button class="modal__close" data-close aria-label="Close video">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><path d="M6 6 18 18M18 6 6 18"/></svg>
+    </button>
+    <div class="modal__frame" id="modalFrame"></div>
+    <div class="modal__meta"><h3 id="modalTitle"></h3><p id="modalDesc"></p></div>
+  </div>
+</div>
+
+<!-- ══════════════════════ BACK TO TOP ══════════════════════ -->
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg class="to-top__ring" viewBox="0 0 44 44"><circle cx="22" cy="22" r="20"/><circle cx="22" cy="22" r="20" id="toTopProgress"/></svg>
+  <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
