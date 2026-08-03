@@ -20,77 +20,29 @@
    ╚═══════════════════════════════════════════════════════════╝ */
 const PROJECTS = [
   {
-    title: 'Multi-Vendor E-Commerce Platform',
-    desc:  'A full marketplace where vendors manage their own storefronts. Cart, checkout, Stripe payments, order tracking and an analytics dashboard — all on Django.',
-    tags:  ['Django', 'PostgreSQL', 'Stripe', 'Celery', 'Docker'],
-    cats:  ['django', 'ecommerce'],
-    badge: 'Featured',
-    video: 'assets/videos/ecommerce.mp4',
+    title: 'Nest — Workspace Booking Platform',
+    desc:  'A full-stack workspace booking platform built with Django & REST API. Browse available spaces, filter by capacity, view details with pricing per hour, and book by selecting date & time slots. Features user authentication (sign up, login, logout) and a personal bookings dashboard.',
+    tags:  ['Django', 'REST API', 'HTML5', 'CSS3', 'JavaScript'],
+    cats:  ['django', 'api'],
+    badge: '',
+    video: 'assets/videos/coworking_space_booking.mp4',
     youtube: '',
-    poster: 'assets/img/project-ecommerce.jpg',
-    live:  '',
+    poster: 'assets/img/project-coworking_space_booking.jpg',
+    live:  'https://abdulrahmansalem457.github.io/coworking_space_booking/index.html',
     code:  ''
   },
   {
-    title: 'SaaS Analytics Dashboard',
-    desc:  'Real-time metrics dashboard with custom chart widgets, team workspaces, role-based permissions and CSV/PDF exports. WebSockets keep everything live.',
-    tags:  ['Django', 'Channels', 'Redis', 'JavaScript', 'Chart.js'],
+    title: 'Parkify — Parking Management Dashboard',
+    desc:  'A full-featured parking management dashboard powered by backend REST APIs, with live security monitoring, floor overview, parking spot management, analytics with Chart.js revenue & booking charts, reports generation, payments tracking, user management and real-time notifications.',
+    tags:  ['HTML5', 'CSS3', 'JavaScript', 'API Integration', 'Chart.js'],
     cats:  ['django', 'frontend'],
-    badge: 'Live',
+    badge: '',
     video: 'assets/videos/dashboard.mp4',
     youtube: '',
     poster: 'assets/img/project-dashboard.jpg',
-    live:  '',
+    live:  'https://abdulrahmansalem457.github.io/Parkify_Dashboard/dashboard.html',
     code:  ''
   },
-  {
-    title: 'Booking & Reservations API',
-    desc:  'A REST API powering a mobile booking app — availability logic, conflict handling, JWT auth, notifications, and a fully documented OpenAPI spec.',
-    tags:  ['DRF', 'JWT', 'PostgreSQL', 'Swagger', 'pytest'],
-    cats:  ['api', 'django'],
-    badge: 'API',
-    video: 'assets/videos/booking-api.mp4',
-    youtube: '',
-    poster: 'assets/img/project-booking.jpg',
-    live:  '',
-    code:  ''
-  },
-  {
-    title: 'Learning Management System',
-    desc:  'Courses, lessons, video hosting, quizzes with auto-grading, student progress tracking and certificate generation. Built for a training academy.',
-    tags:  ['Django', 'AWS S3', 'Celery', 'Tailwind'],
-    cats:  ['django', 'frontend'],
-    badge: 'Case study',
-    video: 'assets/videos/lms.mp4',
-    youtube: '',
-    poster: 'assets/img/project-lms.jpg',
-    live:  '',
-    code:  ''
-  },
-  {
-    title: 'Real-Estate Listings Portal',
-    desc:  'Map-based property search with geo filters, saved searches, agent dashboards and an inquiry pipeline. Heavy on query optimisation.',
-    tags:  ['Django', 'PostGIS', 'Leaflet', 'JavaScript'],
-    cats:  ['django', 'frontend'],
-    badge: 'Featured',
-    video: 'assets/videos/realestate.mp4',
-    youtube: '',
-    poster: 'assets/img/project-realestate.jpg',
-    live:  '',
-    code:  ''
-  },
-  {
-    title: 'Restaurant Ordering System',
-    desc:  'QR-code table ordering with a live kitchen display, printable tickets, payment integration and daily sales reporting for the owner.',
-    tags:  ['Django', 'WebSockets', 'Paymob', 'CSS'],
-    cats:  ['ecommerce', 'frontend'],
-    badge: 'Live',
-    video: 'assets/videos/restaurant.mp4',
-    youtube: '',
-    poster: 'assets/img/project-restaurant.jpg',
-    live:  '',
-    code:  ''
-  }
 ];
 
 /* ── Helpers ───────────────────────────────────────────────── */
